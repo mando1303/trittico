@@ -46,10 +46,11 @@ jobs:
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MACOSX_DEPLOYMENT_TARGET: '10.13'
         with:
-          tagName: v0.1.0
-          releaseName: 'Triptych Slideshow v0.1.0'
-          releaseBody: 'Nuova versione pronta per il download (macOS .dmg e Windows).'
+          tagName: v0.1.1
+          releaseName: 'Triptych Slideshow v0.1.1 (High Sierra Fix)'
+          releaseBody: 'Versione con retrocompatibilità per macOS 10.13 High Sierra e successivi.'
           releaseDraft: false
           prerelease: false
           args: ${{ matrix.args }}
