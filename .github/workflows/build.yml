@@ -48,9 +48,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MACOSX_DEPLOYMENT_TARGET: '10.13'
         with:
-          tagName: v0.1.1
-          releaseName: 'Triptych Slideshow v0.1.1 (High Sierra Fix)'
-          releaseBody: 'Versione con retrocompatibilità per macOS 10.13 High Sierra e successivi.'
+          tagName: v0.1.2
+          releaseName: 'Triptych Slideshow v0.1.2 (Legacy Safari Fix)'
+          releaseBody: 'Versione con polyfill nativi per WebKit e Safari 11/12/13 su High Sierra.'
           releaseDraft: false
           prerelease: false
           args: ${{ matrix.args }}
